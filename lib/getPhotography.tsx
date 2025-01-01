@@ -1,7 +1,7 @@
 import "server-only";
 import { globby } from "globby";
 
-type Photo = { id: number; path: string };
+export type Photo = { id: number; path: string };
 
 const cache: Map<string, Photo | Photo[]> = new Map();
 
