@@ -76,7 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <ThemeProvider attribute="class" disableTransitionOnChange>
      <Providers>
       <Nav />
-      <main className="mx-auto min-h-screen max-w-2xl">{children}</main>
+      <main className="mx-auto min-h-screen w-full max-w-screen-md">{children}</main>
       <div className="noise pointer-events-none absolute inset-0" />
       <div className="color-rays" />
       <Footer />

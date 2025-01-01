@@ -1,5 +1,5 @@
 .prose .anchor {
- @apply invisible absolute -ml-[1em] w-4/5 max-w-2xl cursor-pointer pr-[0.5em] no-underline opacity-0 duration-200 motion-reduce:transition-none;
+ @apply invisible absolute -ml-[1em] w-4/5 max-w-screen-md cursor-pointer pr-[0.5em] no-underline opacity-0 duration-200 motion-reduce:transition-none;
 }
 
 .anchor:hover {

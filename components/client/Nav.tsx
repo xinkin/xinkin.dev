@@ -46,7 +46,7 @@ function NavItem({ path, text, target }: NavItemProps) {
 
 export function Nav() {
  return (
-  <nav className="z-50 mx-auto flex w-full max-w-2xl items-center gap-4 pt-9 font-mono">
+  <nav className="z-50 mx-auto flex w-full max-w-screen-md items-center gap-4 pt-9 font-mono">
    <Link href="/" className="text-lg font-black text-neutral-800 duration-300 motion-reduce:transition-none dark:text-white">
     IK
     <span className="bg-gradient-to-r from-[#6310ff] to-[#14291ff] box-decoration-clone bg-clip-text text-fill-transparent dark:from-[#a2facf] dark:to-[#64acff]">.</span>
