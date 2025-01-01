@@ -131,6 +131,10 @@ export const projects = [
   ],
   technologies: [
    {
+    name: "Fresh",
+    icon: "/assets/tech/fresh.svg",
+   },
+   {
     name: "Deno",
     icon: "/assets/tech/deno.svg",
    },
