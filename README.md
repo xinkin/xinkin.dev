@@ -25,11 +25,11 @@
 
 ## 🖥️ Hosting
 
-### ▲ Vercel (recommended)
+### ▲ Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Figorkowalczyk%2Figorkowalczyk.github.io&env=GITHUB_ACCESS_TOKEN,DISCORD_WEBHOOK_URL&envDescription=Environment%20Variables%20Docs&envLink=https%3A%2F%2Fgithub.com%2FIgorKowalczyk%2Figorkowalczyk.github.io%23-self-hosting&project-name=portfolio&repo-name=igorkowalczyk-portfolio&demo-title=Example%20deploy&demo-description=Example%20production%20deploy%20from%20Github%20Repository&demo-url=https%3A%2F%2Figorkowalczyk.dev&demo-image=https%3A%2F%2Fi.imgur.com%2FT4VsRuy.png)
+[![Deploy with Vercel](https://vercel.com/button)](<https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FIgorKowalczyk%2Figorkowalczyk.dev&env=GITHUB_ACCESS_TOKEN,DISCORD_WEBHOOK_URL&envDescription=You%20can%20set%20these%20optional%20values%3A%20%20HOTJAR_ID%20-%20Your%20Hotjar%20website%20ID%20(for%20analytics)&envLink=https%3A%2F%2Fgithub.com%2FIgorKowalczyk%2Figorkowalczyk.dev%3Ftab%3Dreadme-ov-file%23-env-configuration&project-name=portfolio&repository-name=portfolio&demo-title=Igor%20Kowalczyk%20-%20Portfolio&demo-description=Full-stack%20developer%2C%20designer%2C%20and%20creator&demo-url=https%3A%2F%2Figorkowalczyk.dev&demo-image=https%3A%2F%2Fgithub.com%2Fuser-attachments%2Fassets%2Fee4cc06b-432d-4e1a-8bd2-59a60d6ae31e>)
 
-1. Click on the button above or go to [Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Figorkowalczyk%2Figorkowalczyk.github.io&env=GITHUB_ACCESS_TOKEN,DISCORD_WEBHOOK_URL&envDescription=Environment%20Variables%20Docs&envLink=https%3A%2F%2Fgithub.com%2FIgorKowalczyk%2Figorkowalczyk.github.io%23-self-hosting&project-name=portfolio&repo-name=igorkowalczyk-portfolio&demo-title=Example%20deploy&demo-description=Example%20production%20deploy%20from%20Github%20Repository&demo-url=https%3A%2F%2Figorkowalczyk.dev&demo-image=https%3A%2F%2Fi.imgur.com%2FT4VsRuy.png)
+1. Click on the button above or go to [Vercel](<https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FIgorKowalczyk%2Figorkowalczyk.dev&env=GITHUB_ACCESS_TOKEN,DISCORD_WEBHOOK_URL&envDescription=You%20can%20set%20these%20optional%20values%3A%20%20HOTJAR_ID%20-%20Your%20Hotjar%20website%20ID%20(for%20analytics)&envLink=https%3A%2F%2Fgithub.com%2FIgorKowalczyk%2Figorkowalczyk.dev%3Ftab%3Dreadme-ov-file%23-env-configuration&project-name=portfolio&repository-name=portfolio&demo-title=Igor%20Kowalczyk%20-%20Portfolio&demo-description=Full-stack%20developer%2C%20designer%2C%20and%20creator&demo-url=https%3A%2F%2Figorkowalczyk.dev&demo-image=https%3A%2F%2Fgithub.com%2Fuser-attachments%2Fassets%2Fee4cc06b-432d-4e1a-8bd2-59a60d6ae31e>)
 2. Fill `GITHUB_ACCESS_TOKEN` with your GitHub access token with public repositories permission
 3. Fill `DISCORD_WEBHOOK_URL` with your Discord Webhook URL for contact form
 4. Click on `Deploy` button and wait for deploy
@@ -40,12 +40,13 @@
 
 1. Clone [this repository](https://github.com/igorkowalczyk/igorkowalczyk.github.io) `git clone https://github.com/IgorKowalczyk/igorkowalczyk.github.io.git`
 2. Run `pnpm i` to install all dependencies,
-3. Copy `.env.example` file and rename it to `.env`
-4. In `.env` file set this values:
+3. Run `pnpm clean` to remove all unnecessary files so you can start with a clean project
+4. Copy `.env.example` file and rename it to `.env`
+5. In `.env` file set this values:
    - `GITHUB_ACCESS_TOKEN` - Your GitHub access token with public repositories permission
    - `DISCORD_WEBHOOK_URL` - Discord Webhook URL for contact form
-5. Edit pre-defined values in `config.tsx` file (like `name`, `description`, `socials` etc.)
-6. Run `pnpm build` to build the project or `pnpm dev` to run the project in development mode.
+6. Edit pre-defined values in `config.tsx` file (like `name`, `description`, `socials` etc.)
+7. Run `pnpm build` to build the project or `pnpm dev` to run the project in development mode.
 
 > [!NOTE]
 > You can also use `npm` or `yarn` instead of `pnpm`
