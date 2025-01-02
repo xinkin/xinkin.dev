@@ -1,17 +1,13 @@
 import { meta } from "@/config";
 import { requestGraphql } from "@/lib/graphql/src/requestGraphql";
 
-interface ContributionsCollection {
- contributionYears: number[];
-}
-
-interface User {
- contributionsCollection: ContributionsCollection;
-}
-
 interface GraphqlResponse {
  data: {
-  user: User | null;
+  user: {
+   contributionsCollection: {
+    contributionYears: number[];
+   };
+  } | null;
  };
 }
 

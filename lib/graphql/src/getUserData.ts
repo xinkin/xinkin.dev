@@ -1,39 +1,28 @@
 import { meta } from "@/config";
 import { requestGraphql } from "@/lib/graphql/src/requestGraphql";
 
-interface RepositoryNode {
- id: string;
- stargazerCount: number;
- forkCount: number;
-}
-
-interface RepositoryEdge {
- node: RepositoryNode;
-}
-
-interface Repositories {
- totalCount: number;
- totalDiskUsage: number;
- edges: RepositoryEdge[];
-}
-
-interface Followers {
- totalCount: number;
-}
-
-interface StarredRepositories {
- totalCount: number;
-}
-
-interface User {
- repositories: Repositories;
- followers: Followers;
- starredRepositories: StarredRepositories;
-}
-
 interface GraphqlResponse {
  data: {
-  user: User | null;
+  user: {
+   repositories: {
+    totalCount: number;
+    totalDiskUsage: number;
+    edges: {
+     node: {
+      id: string;
+      stargazerCount: number;
+      forkCount: number;
+     };
+    }[];
+   };
+
+   followers: {
+    totalCount: number;
+   };
+   starredRepositories: {
+    totalCount: number;
+   };
+  } | null;
  };
 }
 
@@ -86,9 +75,7 @@ export async function GetUserData(): Promise<{
  );
 
  const { user } = data;
- if (!user) {
-  throw new Error("User data not found");
- }
+ if (!user) throw new Error("User data not found");
 
  const { followers, starredRepositories, repositories } = user;
  const stars = repositories.edges.reduce((sum, { node }) => sum + node.stargazerCount, 0);

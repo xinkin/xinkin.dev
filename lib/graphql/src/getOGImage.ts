@@ -1,39 +1,27 @@
 import { meta } from "@/config";
 import { requestGraphql } from "@/lib/graphql/src/requestGraphql";
-
-interface Language {
- size: number;
- node: {
-  color: string;
-  name: string;
- };
-}
-
-interface Repository {
- openGraphImageUrl: string;
- isPrivate: boolean;
- description: string;
- languages: {
-  edges: Language[];
-  totalSize: number;
- };
- owner: {
-  avatarUrl: string;
-  name: string;
- };
- stargazerCount: number;
-}
+import { Language } from "@/lib/types";
 
 interface GraphqlResponse {
  data: {
-  repository: Repository | null;
+  repository: {
+   openGraphImageUrl: string;
+   isPrivate: boolean;
+   description: string;
+   languages: {
+    edges: Language[];
+    totalSize: number;
+   };
+   owner: {
+    avatarUrl: string;
+    name: string;
+   };
+   stargazerCount: number;
+  } | null;
  };
 }
 
-export async function GetOGImage(
- repo: string,
- owner: string
-): Promise<null | {
+interface Response {
  domain: string;
  private: boolean;
  og: string;
@@ -45,7 +33,9 @@ export async function GetOGImage(
   name: string;
  };
  stargazerCount: number;
-}> {
+}
+
+export async function GetOGImage(repo: string, owner: string): Promise<Response | null> {
  if (!repo || !owner) return null;
  if (owner !== meta.accounts.github.username) return null;
 

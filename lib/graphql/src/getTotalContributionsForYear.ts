@@ -1,21 +1,15 @@
 import { meta } from "@/config";
 import { requestGraphql } from "@/lib/graphql/src/requestGraphql";
 
-interface ContributionCalendar {
- totalContributions: number;
-}
-
-interface ContributionsCollection {
- contributionCalendar: ContributionCalendar;
-}
-
-interface User {
- contributionsCollection: ContributionsCollection;
-}
-
 interface GraphqlResponse {
  data: {
-  user: User | null;
+  user: {
+   contributionsCollection: {
+    contributionCalendar: {
+     totalContributions: number;
+    };
+   } | null;
+  };
  };
 }
 
@@ -42,5 +36,7 @@ export async function getTotalContributionsForYear(year: number): Promise<number
   }
  );
 
- return data.user?.contributionsCollection.contributionCalendar.totalContributions ?? 0;
+ if (!data.user || !data.user.contributionsCollection) return 0;
+
+ return data.user.contributionsCollection.contributionCalendar.totalContributions;
 }
