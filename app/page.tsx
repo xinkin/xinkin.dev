@@ -116,7 +116,8 @@ export default async function HomePage() {
     <div className="mt-4 flex flex-wrap gap-4">
      {contact.links.map((element) => (
       <Button variant="tertiary" href={element.href} key={`contact-link-${element.href}`} className="gap-2">
-       {element.icon} {element.title}
+       <element.icon className="size-5" />
+       {element.title}
       </Button>
      ))}
     </div>

@@ -1,3 +1,4 @@
+import type { LucideProps } from "lucide-react";
 import { JSX } from "react";
 
 export interface Language {
@@ -33,12 +34,14 @@ export type Header = {
  description: string;
 };
 
+export interface ContactLink {
+ href: string;
+ title: string;
+ icon: ({ ...props }: LucideProps) => JSX.Element;
+}
+
 export type Contact = {
- links: {
-  href: string;
-  title: string;
-  icon: JSX.Element;
- }[];
+ links: ContactLink[];
 };
 
 export type Technology = {
