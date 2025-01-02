@@ -1,7 +1,6 @@
 "use client";
 
 import { Dialog, DialogPanel, DialogTitle, DialogBackdrop, Description } from "@headlessui/react";
-import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -9,6 +8,7 @@ import { Icons } from "../Icons";
 import { Button } from "@/components/Button";
 import Select from "@/components/client/Select";
 import Switch from "@/components/client/Switch";
+import Link from "@/components/Link";
 import { meta } from "@/config";
 import { cn } from "@/lib/utils";
 

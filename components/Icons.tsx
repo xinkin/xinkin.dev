@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils";
 import type { LucideIcon } from "lucide-react";
 import * as LucideIcons from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export type Icon = LucideIcon;
 

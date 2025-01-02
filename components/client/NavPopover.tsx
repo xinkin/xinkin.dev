@@ -1,8 +1,8 @@
 "use client";
 
 import { Transition, Popover, PopoverButton, PopoverPanel, PopoverProps } from "@headlessui/react";
-import Link from "next/link";
 import { Icons } from "../Icons";
+import Link from "@/components/Link";
 import { meta } from "@/config";
 
 export default function NavPopover(props: PopoverProps) {

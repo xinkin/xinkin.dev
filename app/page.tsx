@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "../components/Button";
 import { Icons } from "../components/Icons";
 import { ContactForm } from "@/components/client/ContactForm";
 import { Description, Header2 } from "@/components/Headers";
+import Link from "@/components/Link";
 import { ProjectCard } from "@/components/ProjectCard";
 import { projects } from "@/config";
 import { header, contact, meta, technologies } from "@/config";

@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Masonry } from "react-plock";
+import Link from "@/components/Link";
 import type { Photo } from "@/lib/getPhotography";
 
 export const Grid = ({ photos }: { photos: Photo[] }) => {

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Icons } from "./Icons";
 import { Button } from "@/components/Button";
-import { type Project } from "@/config";
+import Link from "@/components/Link";
+import type { Project } from "@/lib/types";
 import { parseISO } from "@/lib/utils";
 
 export interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement> {

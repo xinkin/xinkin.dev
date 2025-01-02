@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { GeistMono } from "geist/font/mono";
 import Script from "next/script";
 import { ThemeProvider } from "next-themes";
+import { ViewTransitions } from "next-view-transitions";
 import { Nav } from "@/components/client/Nav";
 import { Providers } from "@/components/client/Providers";
 import { Footer } from "@/components/Footer";
@@ -55,11 +56,12 @@ export const viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
  return (
-  <html lang="en" suppressHydrationWarning>
-   <head>
-    {process.env.HOTJAR_ID && (
-     <Script strategy="afterInteractive" id="hotjar">
-      {`
+  <ViewTransitions>
+   <html lang="en" suppressHydrationWarning>
+    <head>
+     {process.env.HOTJAR_ID && (
+      <Script strategy="afterInteractive" id="hotjar">
+       {`
     (function(h,o,t,j,a,r){
      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
      h._hjSettings={hjid:${process.env.HOTJAR_ID},hjsv:6};
@@ -69,21 +71,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
      a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
    `}
-     </Script>
-    )}
-   </head>
-   <body className={cn("antialiase relative scroll-smooth px-6 font-mono", GeistMono.variable)}>
-    <ThemeProvider attribute="class" disableTransitionOnChange>
-     <Providers>
-      <Nav />
-      <main className="mx-auto min-h-screen w-full max-w-screen-md">{children}</main>
-      <div className="noise pointer-events-none absolute inset-0" />
-      <div className="color-rays" />
-      <Footer />
-      <Analytics />
-     </Providers>
-    </ThemeProvider>
-   </body>
-  </html>
+      </Script>
+     )}
+    </head>
+    <body className={cn("antialiase relative scroll-smooth px-6 font-mono", GeistMono.variable)}>
+     <ThemeProvider attribute="class" disableTransitionOnChange>
+      <Providers>
+       <Nav />
+       <main className="mx-auto min-h-screen w-full max-w-screen-md">{children}</main>
+       <div className="noise pointer-events-none absolute inset-0" />
+       <div className="color-rays" />
+       <Footer />
+       <Analytics />
+      </Providers>
+     </ThemeProvider>
+    </body>
+   </html>
+  </ViewTransitions>
  );
 }
