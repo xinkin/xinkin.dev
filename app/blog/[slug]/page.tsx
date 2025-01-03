@@ -58,7 +58,7 @@ export default async function Blog(props0) {
      __html: JSON.stringify(post?.structuredData),
     }}
    />
-   <div className="prose grid flex-1 grid-cols-1 dark:prose-dark md:grid-cols-[1fr,minmax(auto,640px),1fr] md:[&>*]:col-start-2">
+   <div className="grid flex-1 grid-cols-1 md:grid-cols-[1fr,minmax(auto,640px),1fr] md:[&>*]:col-start-2">
     <div>
      <header className="w-full">
       <Header1>{post.title}</Header1>
