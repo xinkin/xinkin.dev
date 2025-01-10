@@ -82,6 +82,7 @@ export default async function Blog(props0) {
       <Link
        key={props.slug}
        href={`#${props.slug}`}
+       scroll={true}
        className={cn(
         {
          "ml-2": props.size === 2,
