@@ -42,8 +42,8 @@ importers:
         specifier: 0.474.0
         version: 0.474.0(react@19.0.0)
       mdx-bundler:
-        specifier: 10.0.3
-        version: 10.0.3(esbuild@0.24.0)
+        specifier: 10.1.0
+        version: 10.1.0(esbuild@0.24.0)
       next:
         specifier: 15.1.6
         version: 15.1.6(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -2922,8 +2922,8 @@ packages:
   mdast-util-to-string@4.0.0:
     resolution: {integrity: sha512-0H44vDimn51F0YwvxSJSm0eCDOJTRlmN0R1yBh4HLj9wiV1Dn0QoXGbvFAWj2hSItVTlCmBF1hqKlIyUBVFLPg==}
 
-  mdx-bundler@10.0.3:
-    resolution: {integrity: sha512-vRtVZ5t+nUP0QtoRVgjDFO10YDjRgKe/19ie0IR8FqE8SugNn5RP4sCWBPzKoEwoGbqfQOrgHy+PHCVyfaCDQQ==}
+  mdx-bundler@10.1.0:
+    resolution: {integrity: sha512-HtyVyqzBz/rG3hjca2ZggI5Ghx8YdBeAfnDIgqiMVOZyum1WcmBsdPKYN0AhV4SNaxyohASIrwC8DiXtU55FUA==}
     engines: {node: '>=18', npm: '>=6'}
     peerDependencies:
       esbuild: 0.*
@@ -4171,7 +4171,7 @@ snapshots:
       camel-case: 4.1.2
       comment-json: 4.2.5
       gray-matter: 4.0.3
-      mdx-bundler: 10.0.3(esbuild@0.24.0)
+      mdx-bundler: 10.1.0(esbuild@0.24.0)
       rehype-stringify: 10.0.1
       remark-frontmatter: 5.0.0
       remark-parse: 11.0.0
@@ -7440,7 +7440,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
 
-  mdx-bundler@10.0.3(esbuild@0.24.0):
+  mdx-bundler@10.1.0(esbuild@0.24.0):
     dependencies:
       '@babel/runtime': 7.25.6
       '@esbuild-plugins/node-resolve': 0.2.2(esbuild@0.24.0)
