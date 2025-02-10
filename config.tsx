@@ -189,8 +189,8 @@ export const projects = [
     icon: "/assets/tech/react.svg",
    },
    {
-    name: "TailwindCSS",
-    icon: "/assets/tech/tailwindcss.svg",
+    name: "Discord API",
+    icon: "/assets/tech/discord.svg",
    },
   ],
   website: "https://views.igorkowalczyk.dev",
