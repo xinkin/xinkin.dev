@@ -122,6 +122,10 @@ export const projects = [
     name: "Discord API",
     icon: "/assets/tech/discord.svg",
    },
+   {
+    name: "TailwindCSS",
+    icon: "/assets/tech/tailwindcss.svg",
+   },
   ],
   website: "https://rabbitrp.pl",
   github: null,
@@ -152,8 +156,8 @@ export const projects = [
     icon: "/assets/tech/typescript.svg",
    },
    {
-    name: "TailwindCSS",
-    icon: "/assets/tech/tailwindcss.svg",
+    name: "Discord API",
+    icon: "/assets/tech/discord.svg",
    },
   ],
   website: "https://discord-activity.deno.dev",
@@ -187,10 +191,6 @@ export const projects = [
    {
     name: "React",
     icon: "/assets/tech/react.svg",
-   },
-   {
-    name: "Discord API",
-    icon: "/assets/tech/discord.svg",
    },
   ],
   website: "https://views.igorkowalczyk.dev",
