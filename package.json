@@ -87,5 +87,13 @@
   "bugs": {
     "url": "https://github.com/igorkowalczyk/igorkowalczyk.github.io/issues"
   },
-  "packageManager": "pnpm@10.2.1"
+  "packageManager": "pnpm@10.2.1",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "contentlayer2",
+      "esbuild",
+      "protobufjs",
+      "sharp"
+    ]
+  }
 }

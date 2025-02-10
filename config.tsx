@@ -99,6 +99,34 @@ export const projects = [
   github: null,
  },
  {
+  name: "RabbitRP",
+  description: "Website for a FiveM roleplay server with player applications, server statistics, player profiles, Discord integration and more. Fully customizable and easy to use.",
+  images: [
+   {
+    src: "/assets/projects/rabbitrp/image-01.png",
+    alt: "RabbitRP main page screenshot",
+    width: 1920,
+    height: 1080,
+   },
+  ],
+  technologies: [
+   {
+    name: "Astro",
+    icon: "/assets/tech/astro.svg",
+   },
+   {
+    name: "PostgreSQL",
+    icon: "/assets/tech/postgresql.svg",
+   },
+   {
+    name: "Discord API",
+    icon: "/assets/tech/discord.svg",
+   },
+  ],
+  website: "https://rabbitrp.pl",
+  github: null,
+ },
+ {
   name: "Discord activity watcher",
   started: "2023-10-05T00:00:00Z",
   description: "API for displaying Discord activity data in JSON or SVG",
@@ -351,11 +379,6 @@ export const technologies = [
   link: "https://github.com",
  },
  {
-  name: "GraphQL",
-  icon: "/assets/tech/graphql.svg",
-  link: "https://graphql.org/",
- },
- {
   name: "Figma",
   icon: "/assets/tech/figma.svg",
   link: "https://figma.com/",
@@ -371,8 +394,8 @@ export const technologies = [
   link: "https://deno.land/",
  },
  {
-  name: "C++",
-  icon: "/assets/tech/cpp.svg",
+  name: "PostgreSQL",
+  icon: "/assets/tech/postgresql.svg",
  },
  {
   name: "MySQL",
