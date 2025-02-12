@@ -4,14 +4,15 @@ import { Button } from "@/components/Button";
 import Link from "@/components/Link";
 import type { Project } from "@/lib/types";
 import { parseISO } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 export interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement> {
  project: Project;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, className, ...props }: ProjectCardProps) {
  return (
-  <div key={project.name} className="mb-16 overflow-hidden duration-200 motion-reduce:transition-none">
+  <div key={project.name} {...props} className={cn("mb-16 overflow-hidden duration-200 motion-reduce:transition-none", className)}>
    <h3 className="mb-2 text-2xl font-bold tracking-[-0.03em]">{project.name}</h3>
    {project.started && (
     <time className="my-2 block text-sm font-normal leading-none text-neutral-500 dark:text-neutral-500" dateTime={new Date(project.started).toUTCString()}>
@@ -33,20 +34,22 @@ export function ProjectCard({ project }: ProjectCardProps) {
      </div>
     ))}
    </div>
-   <div className="mt-6 flex flex-wrap gap-4">
-    {project.website && (
-     <Button variant="primary" href={project.website} rel="noopener noreferrer">
-      <Icons.Link className="mr-2 size-5 stroke-2" />
-      Visit website
-     </Button>
-    )}
-    {project.github && (
-     <Button variant="secondary" href={project.github} rel="noopener noreferrer">
-      <Icons.Github className="mr-2 size-5 fill-neutral-700 dark:fill-white" />
-      View on Github
-     </Button>
-    )}
-   </div>
+   {project.website || project.github ? (
+    <div className="mt-6 flex flex-wrap gap-4">
+     {project.website && (
+      <Button variant="primary" href={project.website} rel="noopener noreferrer">
+       <Icons.Link className="mr-2 size-5 stroke-2" />
+       Visit website
+      </Button>
+     )}
+     {project.github && (
+      <Button variant="secondary" href={project.github} rel="noopener noreferrer">
+       <Icons.Github className="mr-2 size-5 fill-neutral-700 dark:fill-white" />
+       View on Github
+      </Button>
+     )}
+    </div>
+   ) : null}
   </div>
  );
 }
