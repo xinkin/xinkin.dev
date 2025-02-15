@@ -55,8 +55,8 @@ export async function submitContactForm(_prevState: any, data: FormData) {
   const hash = createHash("sha256").update(email.trim()).digest("hex");
 
   const embed = {
-   title: "📩 New message from igorkowalczyk.dev",
-   url: "https://igorkowalczyk.dev",
+   title: "📩 New message from xinkin.dev",
+   //    url: "https://igorkowalczyk.dev",
    description: `>>> ${message.trim()}`,
    color: 5759645,
    fields: [
@@ -72,7 +72,7 @@ export async function submitContactForm(_prevState: any, data: FormData) {
     },
    ],
    footer: {
-    text: "igorkowalczyk.dev",
+    text: "xinkin.dev",
     icon_url: `https://www.gravatar.com/avatar/${hash}?d=identicon`,
    },
    timestamp: new Date().toISOString(),
@@ -82,8 +82,8 @@ export async function submitContactForm(_prevState: any, data: FormData) {
    method: "POST",
    headers: { "Content-Type": "application/json" },
    body: JSON.stringify({
-    username: "igorkowalczyk.dev",
-    avatar_url: "https://igorkowalczyk.dev/assets/avatar.png",
+    username: "xinkin.dev",
+    // avatar_url: "https://igorkowalczyk.dev/assets/avatar.png",
     embeds: [embed],
    }),
   });

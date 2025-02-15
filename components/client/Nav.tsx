@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import MobileNav from "@/components/client/MobileNav";
-import Popover from "@/components/client/NavPopover";
+// import Popover from "@/components/client/NavPopover";
 import Settings from "@/components/client/Settings";
 import Link from "@/components/Link";
 import { nav } from "@/config";
@@ -48,7 +48,7 @@ export function Nav() {
  return (
   <nav className="z-50 mx-auto flex w-full max-w-screen-md items-center gap-4 pt-9 font-mono">
    <Link href="/" className="text-lg font-black text-neutral-800 duration-300 motion-reduce:transition-none dark:text-white">
-    IK
+    YC
     <span className="bg-gradient-to-r from-[#6310ff] to-[#14291ff] box-decoration-clone bg-clip-text text-fill-transparent dark:from-[#a2facf] dark:to-[#64acff]">.</span>
    </Link>
    <MobileNav />
@@ -56,7 +56,7 @@ export function Nav() {
     {nav.main.map((item) => {
      return <NavItem path={item.href} text={item.title} key={`nav-left-${item.href}`} />;
     })}
-    <Popover className="relative" />
+    {/* <Popover className="relative" /> */}
    </div>
    <Settings />
   </nav>

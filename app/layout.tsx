@@ -11,7 +11,7 @@ import "styles/globals.css";
 import { cn } from "@/lib/utils";
 
 export const metadata = {
- metadataBase: new URL(meta.url),
+//  metadataBase: new URL(meta.url),
  title: {
   default: meta.title,
   template: `%s | ${meta.title}`,
@@ -20,7 +20,7 @@ export const metadata = {
  openGraph: {
   title: meta.title,
   description: meta.shortDescription,
-  url: meta.url,
+//   url: meta.url,
   siteName: meta.title,
   locale: "en_US",
   type: "website",

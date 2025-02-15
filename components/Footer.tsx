@@ -5,7 +5,7 @@ export function Footer() {
  return (
   <footer className="mx-auto w-full max-w-screen-md pb-12">
    <hr className="mx-auto mb-5 w-full border border-neutral-200 dark:border-neutral-800" />
-   <p className="mb-4 text-sm text-neutral-700 opacity-50 dark:text-neutral-300">Copyright &copy; 2019 - {new Date().getFullYear()} Igor Kowalczyk</p>
+   {/* <p className="mb-4 text-sm text-neutral-700 opacity-50 dark:text-neutral-300">Copyright &copy; 20 - {new Date().getFullYear()} Igor Kowalczyk</p> */}
 
    <div className="flex justify-between gap-4">
     {footer.categories.map((category) => (

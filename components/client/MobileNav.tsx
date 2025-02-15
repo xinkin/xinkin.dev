@@ -9,7 +9,8 @@ import { cn } from "@/lib/utils";
 
 export default function MobileNav() {
  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
- const menuItems = [...nav.main, ...nav.mobile];
+ // const menuItems = [...nav.main, ...nav.mobile];
+ const menuItems = [...nav.main];
 
  return (
   <Drawer.Root noBodyStyles={true} direction="left" open={isMenuOpen} onOpenChange={() => setIsMenuOpen(!isMenuOpen)}>

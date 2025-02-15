@@ -16,6 +16,14 @@ export const ConvertNumber = (number: number): string => {
  }).format(number);
 };
 
+export function formatMonthYear(dateString: string) {
+ const date = new Date(dateString);
+ return date.toLocaleDateString("en-US", {
+  month: "long",
+  year: "numeric",
+ });
+}
+
 export const parseISO = (date: string): string => {
  const formatted = new Date(date);
  return `${formatted.toLocaleString("en-us", {
