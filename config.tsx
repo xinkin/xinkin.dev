@@ -6,7 +6,7 @@ export const meta = {
  description: "I'm a Web3 frontend developer with a passion for making blockchain click. I create dApps that bring users and web3 together, minus the complexity.",
  shortDescription: "Web3 Frontend Developer,",
  //url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : `http://localhost:${process.env.PORT || 3000}`,
-  url: "https://igorkowalczyk.dev",
+ url: "https://igorkowalczyk.dev",
  accounts: {
   github: {
    username: "xinkin",
@@ -40,7 +40,7 @@ export const work = [
   description: "ChainLabs is a development studio that helps empower consumers by building transparent and decentralized products.",
   images: [
    {
-    src: "/assets/projects/chainlabs/image-01.png",
+    src: "/assets/projects/chainlabs/chainlabs.png",
     alt: "ChainLabs main page screenshot",
     width: 1920,
     height: 1080,
@@ -69,7 +69,7 @@ export const work = [
   description: "ZNS Connect is a decentralized naming system that simplifies Web3 by offering user-friendly and memorable domain names.\n\nTOP 10 Polygon Village | Paris Blockchain Week Top 100 | 800K + Domains Minted(Jan 2024)",
   images: [
    {
-    src: "/assets/projects/znsconnect/image-01.png",
+    src: "/assets/projects/znsconnect/znsconnect.png",
     alt: "ZNS Connect main page screenshot",
     width: 1920,
     height: 1080,
@@ -210,7 +210,7 @@ export const projects = [
   description: "A unique AI-powered DeFi trading bot that puts a humorous twist on memecoin investing. Built on the Base network, this project features an AI personality (powered by Mira) that starts as a crypto skeptic but can be convinced to invest in memecoins through persuasive conversation.",
   images: [
    {
-    src: "/assets/projects/wairren/image-01.png",
+    src: "/assets/projects/wairren/wairren.png",
     alt: "Wairren main page screenshot",
     width: 1920,
     height: 1080,
@@ -232,7 +232,7 @@ export const projects = [
   description: "Fluidity is a chat application that utilizes Superfluid's protocol and OpenAI's text-to-intent formation to simplify the process of creating and managing token streaming.\nIt makes it exceptionally easy for users to seamlessly stream their funds.",
   images: [
    {
-    src: "/assets/projects/fluidity/image-01.png",
+    src: "/assets/projects/fluidity/fluidity.png",
     alt: "Fluidity main page screenshot",
     width: 1920,
     height: 1080,
