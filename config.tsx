@@ -6,7 +6,7 @@ export const meta = {
  description: "I'm a Web3 frontend developer with a passion for making blockchain click. I create dApps that bring users and web3 together, minus the complexity.",
  shortDescription: "Web3 Frontend Developer,",
  //url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : `http://localhost:${process.env.PORT || 3000}`,
- //  url: "https://igorkowalczyk.dev",
+  url: "https://igorkowalczyk.dev",
  accounts: {
   github: {
    username: "xinkin",
