@@ -192,12 +192,12 @@ export const work = [
 export const awards = [
  {
   name: "Open Source Recognition from Huddle01",
-  date: "2023-01-01T00:00:00Z",
+  date: "2023-10",
   description: "Developed a chat interface for Huddle01's audio-spaces application, facilitating seamless cross-peer message exchange within a room.",
  },
  {
   name: "Honourable Mention from Superfluid",
-  date: "2023-01-01T00:00:00Z",
+  date: "2023-09",
   description: "Recognized in the Superfluid Wavepool, demonstrating innovative solutions in the field of token streaming.",
  },
 ] satisfies Awards[];
@@ -329,15 +329,14 @@ export const footer = {
      title: "Home",
      href: "/",
     },
-    {
-     title: "My work",
-     href: "/work",
-    },
+    // {
+    //  title: "My work",
+    //  href: "/work",
+    // },
     {
      title: "Side projects",
      href: "/side-projects",
     },
-
     // {
     //  title: "Blog",
     //  href: "/blog",
@@ -350,6 +349,11 @@ export const footer = {
     {
      title: "Github",
      href: `https://github.com/${meta.accounts.github.username}`,
+     target: "_blank",
+    },
+    {
+     title: "Twitter",
+     href: `https://twitter.com/${meta.accounts.twitter.username}`,
      target: "_blank",
     },
     // {
@@ -375,6 +379,11 @@ export const footer = {
     {
      title: "Contact",
      href: "/contact",
+    },
+    {
+     title: "Read CV",
+     href: "https://read.cv/xinkin",
+     target: "_blank",
     },
     // {
     //  title: "Photography",

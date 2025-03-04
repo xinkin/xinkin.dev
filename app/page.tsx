@@ -77,10 +77,10 @@ export default function HomePage() {
     </div>
    </section>
 
-   <section className="mb-6">
-    <Header2 id="my-work">Work Experience</Header2>
-    {/* <Description>Explore some of my recent work below. For more, visit my GitHub profile.</Description> */}
+   <section id="my-work" className="mb-6">
+    <Header2>Work Experience</Header2>
 
+    {/* <Description>Explore some of my recent work below. For more, visit my GitHub profile.</Description> */}
     <div className="mt-6">
      {work.slice(0, 2).map((project) => (
       <ProjectCard key={`project-${project.name}`} project={project} />
@@ -95,8 +95,8 @@ export default function HomePage() {
     </div> */}
    </section>
 
-   <section className="mb-16">
-    <Header2 id="awards">Awards & Recognition</Header2>
+   <section id="awards" className="mb-16">
+    <Header2>Awards & Recognition</Header2>
     <div className="mt-6">
      <AwardsSection awards={awards} />
     </div>
