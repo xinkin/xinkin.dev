@@ -24,7 +24,7 @@ export type Project = {
  bulletPoints?: string[];
  technologies: {
   name: string;
-  icon: string;
+//   icon: string;
  }[];
  website: string | null;
  github: string | null;
@@ -54,7 +54,7 @@ export type Contact = {
 
 export type Technology = {
  name: string;
- icon: string;
+//  icon: string;
  class?: string;
  link?: string;
 };

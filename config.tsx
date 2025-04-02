@@ -5,24 +5,15 @@ export const meta = {
  title: "Yash Chowdhury",
  description: "I'm a Web3 frontend developer with a passion for making blockchain click. I create dApps that bring users and web3 together, minus the complexity.",
  shortDescription: "Web3 Frontend Developer,",
- //url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : `http://localhost:${process.env.PORT || 3000}`,
- url: "https://igorkowalczyk.dev",
+ url: "https://xinkin-dev.vercel.app/",
  accounts: {
   github: {
    username: "xinkin",
-   //    repo: "igorkowalczyk.github.io",
+   repo: "xinkin-dev",
   },
   twitter: {
    username: "@xinkin_",
   },
-  //   discord: {
-  //    username: "@majonez.exe",
-  //    invite: "https://discord.gg/sgt4QEyDxK",
-  //    id: "544164729354977282",
-  //   },
-  //   instagram: {
-  //    username: "majonezexe",
-  //   },
  },
 } satisfies Meta;
 
@@ -47,17 +38,9 @@ export const work = [
    },
   ],
   bulletPoints: ["Implemented a comprehensive web3 authentication system integrating Privy, Web3Auth, and Abstract Native Wallet Connect, implementing secure wallet creation and social login flows using NextAuth for enhanced user onboarding", "Built and deployed full-stack account abstraction infrastructure using Biconomy's Smart Accounts, enabling gasless transactions and simplified user experience across multiple client projects", "Developed proxy APIs and utility functions to streamline blockchain interactions across frontend, backend, and smart contract layers, ensuring seamless data flow and transaction handling"],
-  technologies: [
-   {
-    name: "Next.js",
-    icon: "/assets/tech/next.svg",
-   },
-   {
-    name: "MongoDB",
-    icon: "/assets/tech/mongodb.svg",
-   },
-   { name: "TypeScript", icon: "/assets/tech/typescript.svg" },
-  ],
+
+  technologies: [{ name: "Next.js" }, { name: "TypeScript" }, { name: "TailwindCSS" }, { name: "Viem" }, { name: "MongoDB" }, { name: "Biconomy" }, { name: "Privy" }, { name: "Web3Auth" }, { name: "Abstract Native Wallet" }, { name: "NextAuth" }, { name: "Ponder.sh" }],
+
   website: "https://chainlabs.in",
   github: null,
  },
@@ -66,7 +49,7 @@ export const work = [
   started: "2023-12-29",
   ended: "2024-05-27",
   showendDate: true,
-  description: "ZNS Connect is a decentralized naming system that simplifies Web3 by offering user-friendly and memorable domain names.\n\nTOP 10 Polygon Village | Paris Blockchain Week Top 100 | 800K + Domains Minted(Jan 2024)",
+  description: "ZNS Connect is a decentralized naming system that simplifies Web3 by offering user-friendly and memorable domain names.",
   images: [
    {
     src: "/assets/projects/znsconnect/znsconnect.png",
@@ -75,118 +58,11 @@ export const work = [
     height: 1080,
    },
   ],
-  bulletPoints: ["Architected and implemented comprehensive frontend infrastructure, integrating Web3 wallet connectivity, smart contract interactions, and real-time domain resolution features", "Engineered custom subgraphs for efficient blockchain data indexing and querying, optimizing domain search and management functionality", "Developed and audited smart contracts for secure domain minting and management, implementing robust validation and ownership transfer mechanisms", "Built automated oracle integration and migration scripts to ensure reliable price feeds and seamless protocol upgrades"],
-  technologies: [
-   {
-    name: "TailwindCSS",
-    icon: "/assets/tech/tailwindcss.svg",
-   },
-   {
-    name: "Next.js",
-    icon: "/assets/tech/next.svg",
-   },
-  ],
+  bulletPoints: ["Architected and implemented Web3 frontend infrastructure with wallet connectivity, smart contract interactions, and developed a custom MetaMask Snap for enhanced user experience", "Engineered custom subgraphs and indexing solutions for optimized blockchain data querying, significantly improving domain search and management functionality", "Developed and audited smart contracts for domain management with automated oracle integrations, ensuring secure minting and reliable price feeds"],
+  technologies: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Viem" }, { name: "TypeScript" }, { name: "Wagmi" }, { name: "Metamask Snap" }],
   website: "https://znsconnect.io",
   github: null,
  },
- //  {
- //   name: "RabbitRP",
- //   description: "Website for a FiveM roleplay server with player applications, server statistics, player profiles, Discord integration and more. Fully customizable and easy to use.",
- //   images: [
- //    {
- //     src: "/assets/projects/rabbitrp/image-01.png",
- //     alt: "RabbitRP main page screenshot",
- //     width: 1920,
- //     height: 1080,
- //    },
- //   ],
- //   technologies: [
- //    {
- //     name: "Astro",
- //     icon: "/assets/tech/astro.svg",
- //    },
- //    {
- //     name: "PostgreSQL",
- //     icon: "/assets/tech/postgresql.svg",
- //    },
- //    {
- //     name: "Discord API",
- //     icon: "/assets/tech/discord.svg",
- //    },
- //    {
- //     name: "TailwindCSS",
- //     icon: "/assets/tech/tailwindcss.svg",
- //    },
- //   ],
- //   website: "https://rabbitrp.pl",
- //   github: null,
- //  },
- //  {
- //   name: "Discord activity watcher",
- //   started: "2023-10-05T00:00:00Z",
- //   description: "API for displaying Discord activity data in JSON or SVG",
- //   images: [
- //    {
- //     src: "/assets/projects/discord-activity/image-01.png",
- //     alt: "Discord activity main page screenshot",
- //     width: 1920,
- //     height: 1080,
- //    },
- //   ],
- //   technologies: [
- //    {
- //     name: "Fresh",
- //     icon: "/assets/tech/fresh.svg",
- //    },
- //    {
- //     name: "Deno",
- //     icon: "/assets/tech/deno.svg",
- //    },
- //    {
- //     name: "TypeScript",
- //     icon: "/assets/tech/typescript.svg",
- //    },
- //    {
- //     name: "Discord API",
- //     icon: "/assets/tech/discord.svg",
- //    },
- //   ],
- //   website: "https://discord-activity.deno.dev",
- //   github: "https://github.com/igorkowalczyk/discord-activity",
- //  },
- //  {
- //   name: "Profile views",
- //   started: "2023-01-27T00:00:00Z",
- //   description: "Create your own badge that will count views anywhere you want!",
- //   images: [
- //    {
- //     src: "/assets/projects/profile-views/image-01.png",
- //     alt: "Profile views main page screenshot",
- //     width: 1920,
- //     height: 1080,
- //    },
- //   ],
- //   technologies: [
- //    {
- //     name: "Astro",
- //     icon: "/assets/tech/astro.svg",
- //    },
- //    {
- //     name: "Deno",
- //     icon: "/assets/tech/deno.svg",
- //    },
- //    {
- //     name: "TypeScript",
- //     icon: "/assets/tech/typescript.svg",
- //    },
- //    {
- //     name: "React",
- //     icon: "/assets/tech/react.svg",
- //    },
- //   ],
- //   website: "https://views.igorkowalczyk.dev",
- //   github: "https://github.com/igorkowalczyk/github-views",
- //  },
 ] satisfies Project[];
 
 export const awards = [
@@ -216,12 +92,7 @@ export const projects = [
     height: 1080,
    },
   ],
-  technologies: [
-   {
-    name: "Next.js",
-    icon: "/assets/tech/next.svg",
-   },
-  ],
+  technologies: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Viem" }, { name: "TypeScript" }, { name: "Wagmi" }, { name: "Uniswap" }, { name: "DexScreener" }, { name: "Mira Network" }, { name: "OpenAI" }],
   website: "https://www.wairren.xyz/",
   github: null,
  },
@@ -238,12 +109,7 @@ export const projects = [
     height: 1080,
    },
   ],
-  technologies: [
-   {
-    name: "Next.js",
-    icon: "/assets/tech/next.svg",
-   },
-  ],
+  technologies: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Viem" }, { name: "Wagmi" }, { name: "Super Fluid" }, { name: "OpenAI" }],
   website: "https://www.fluidity.fun/",
   github: null,
  },
@@ -310,13 +176,6 @@ export const contact = {
     return <Icons.Twitter {...props} />;
    },
   },
-  //   {
-  //    href: `https://www.instagram.com/${meta.accounts.instagram.username}/`,
-  //    title: "Instagram",
-  //    icon(props) {
-  //     return <Icons.Instagram {...props} />;
-  //    },
-  //   },
  ],
 } satisfies Contact;
 
@@ -329,18 +188,10 @@ export const footer = {
      title: "Home",
      href: "/",
     },
-    // {
-    //  title: "My work",
-    //  href: "/work",
-    // },
     {
      title: "Side projects",
      href: "/side-projects",
     },
-    // {
-    //  title: "Blog",
-    //  href: "/blog",
-    // },
    ],
   },
   {
@@ -356,26 +207,11 @@ export const footer = {
      href: `https://twitter.com/${meta.accounts.twitter.username}`,
      target: "_blank",
     },
-    // {
-    //  title: "Instagram",
-    //  href: `https://instagram.com/${meta.accounts.instagram.username}`,
-    //  target: "_blank",
-    // },
-
-    // {
-    //  title: "Discord",
-    //  href: meta.accounts.discord.invite,
-    //  target: "_blank",
-    // },
    ],
   },
   {
    title: "Other",
    links: [
-    // {
-    //  title: "What i use",
-    //  href: "/uses",
-    // },
     {
      title: "Contact",
      href: "/contact",
@@ -385,10 +221,6 @@ export const footer = {
      href: "https://read.cv/xinkin",
      target: "_blank",
     },
-    // {
-    //  title: "Photography",
-    //  href: "/photography",
-    // },
    ],
   },
  ],
@@ -397,49 +229,37 @@ export const footer = {
 export const technologies = [
  {
   name: "React",
-  icon: "/assets/tech/react.svg",
   link: "https://reactjs.org/",
  },
  {
   name: "Next.js",
-  icon: "/assets/tech/next.svg",
-  class: "invert-0 dark:invert",
   link: "https://nextjs.org/",
  },
  {
   name: "TailwindCSS",
-  icon: "/assets/tech/tailwindcss.svg",
   link: "https://tailwindcss.com/",
  },
  {
   name: "Javascript",
-  icon: "/assets/tech/javascript.svg",
  },
  {
   name: "Typescript",
-  icon: "/assets/tech/typescript.svg",
   link: "https://www.typescriptlang.org/",
  },
  {
   name: "Github",
-  icon: "/assets/tech/github.svg",
-  class: "dark:invert-0 invert",
   link: "https://github.com",
  },
  {
   name: "MongoDB",
-  icon: "/assets/tech/mongodb.svg",
   link: "https://www.mongodb.com/",
  },
  {
   name: "Docker",
-  icon: "/assets/tech/docker.svg",
   link: "https://www.docker.com/",
  },
  {
   name: "Vercel",
-  icon: "/assets/tech/vercel.svg",
-  class: "invert-0 dark:invert",
   link: "https://vercel.com/",
  },
 ] satisfies Technology[];
